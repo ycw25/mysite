@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+
+    <!-- <script>
+        function inputvalue() {
+            var input = document.getElementById("text").value;
+            alert('btn click');
+            window.open('/add-blog');
+        }
+    </script> -->
+    <form action="http://127.0.0.1:3000/new_comment" method="post">
+</head>
+
+<body>
+    <%- include("./partials/head.ejs") %>
+
+        <%- include("./partials/nav.ejs") %>
+
+            <div class="display">
+                <p class="msgb">Message board</p>
+                <%- include("./partials/displaynews.ejs") %>
+            </div>
+            <div class="display">
+                <form action="/new_comment" method="POST">
+                    <input type="text" name="mytext" class="comments_input" required />
+                    <input type="submit" value="Send" class="input_btn" />
+                </form>
+
+            </div>
+</body>
+
+</html>

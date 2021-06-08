@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css");
+body {
+    background-image: linear-gradient(to top, #ECF0F2, #A4B5CD);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    display: block;
+}
+
+
+/* ----------nav---------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+nav h1 {
+    margin: 30px 10px 0px 30px;
+    color: #fff;
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 36pt;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'cwTeXFangSong', serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+nav a {
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/* ----------footer---------- */
+
+footer {
+    display: block;
+    padding: 5px;
+    font-family: 'cwTeXFangSong', serif;
+}
+
+
+/* ----------index---------- */
+
+.index_body {
+    text-align: center;
+    background-image: url(index.jpg);
+    background-size: 100%;
+}
+
+.index_body div {
+    display: inline-block;
+}
+
+.index_texts {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+.index_texts p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'cwTeXFangSong', serif;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+.p-1 {
+    margin-top: 100px;
+    font-size: 70pt;
+}
+
+.p-2 {
+    font-size: 30pt;
+}
+
+.p-3 {
+    margin-top: -30px;
+    font-size: 25pt;
+}
+
+.p-4 {
+    font-size: 25pt;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+}
+
+.img img {
+    width: 100%;
+}
+
+
+/* ----------skills---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'cwTeXFangSong', serif;
+    font-weight: 300;
+}
+
+.row {
+    max-width: 900px;
+    margin: 50px auto 0;
+}
+
+
+/* card1 */
+
+.card1 {
+    margin-bottom: 20px;
+    float: left;
+    padding: 1rem;
+    width: 50%;
+}
+
+.card1 .wrapper {
+    background-color: #fff;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card1 .wrapper:hover .data {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.card1 .data {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(calc(200px + 1em));
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.card1 .data .content {
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+}
+
+.card1 .title {
+    margin-top: 10px;
+    color: #000;
+    font-size: 28pt;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.card1 .text {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.card1 input[type='checkbox'] {
+    display: none;
+}
+
+.card1 .wrapper {
+    background: url('bg.jpg') 30% 250%/cover no-repeat;
+}
+
+.card1 .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #caf7e3;
+    color: #fff;
+    padding: 0.8em;
+}
+
+.card1 .date span {
+    display: block;
+    text-align: center;
+}
+
+.card1 .date .year {
+    font-weight: 700;
+    font-size: 10pt;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.35);
+}
+
+.card1 .date .to {
+    font-size: 12px;
+}
+
+.card1 .content {
+    background-color: #fff;
+    height: 350px;
+    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* card2 */
+
+.card2 {
+    margin-bottom: 20px;
+    float: left;
+    padding: 1rem;
+    width: 50%;
+}
+
+.card2 .wrapper {
+    background-color: #fff;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card2 .wrapper:hover .data {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.card2 .data {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(calc(200px + 1em));
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.card2 .data .content {
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+}
+
+.card2 .title {
+    margin-top: 10px;
+    color: #000;
+    font-size: 28pt;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.card2 .text {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.card2 input[type='checkbox'] {
+    display: none;
+}
+
+.card2 .wrapper {
+    background: url('pic2.jpg') 30% 250%/cover no-repeat;
+}
+
+.card2 .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #caf7e3;
+    color: #fff;
+    padding: 0.8em;
+}
+
+.card2 .date span {
+    display: block;
+    text-align: center;
+}
+
+.card2 .date .year {
+    font-weight: 700;
+    font-size: 10pt;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.35);
+}
+
+.card2 .date .to {
+    font-size: 12px;
+}
+
+.card2 .content {
+    background-color: #fff;
+    height: 350px;
+    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* card3 */
+
+.card3 {
+    margin-bottom: 20px;
+    float: left;
+    padding: 1rem;
+    width: 50%;
+}
+
+.card3 .wrapper {
+    background-color: #fff;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card3 .wrapper:hover .data {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.card3 .data {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(calc(200px + 1em));
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.card3 .data .content {
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+}
+
+.card3 .title {
+    margin-top: 10px;
+    color: #000;
+    font-size: 28pt;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.card3 .text {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.card3 input[type='checkbox'] {
+    display: none;
+}
+
+.card3 .wrapper {
+    background: url('pic1.jpg') 30% 200%/cover no-repeat;
+}
+
+.card3 .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #caf7e3;
+    color: #fff;
+    padding: 0.8em;
+}
+
+.card3 .date span {
+    display: block;
+    text-align: center;
+}
+
+.card3 .date .year {
+    font-weight: 700;
+    font-size: 10pt;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.35);
+}
+
+.card3 .date .to {
+    font-size: 12px;
+}
+
+.card3 .content {
+    background-color: #fff;
+    height: 350px;
+    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* card4 */
+
+.card4 {
+    margin-bottom: 20px;
+    float: left;
+    padding: 1rem;
+    width: 50%;
+}
+
+.card4 .wrapper {
+    background-color: #fff;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card4 .wrapper:hover .data {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.card4 .data {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(calc(200px + 1em));
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.card4 .data .content {
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+}
+
+.card4 .title {
+    margin-top: 10px;
+    color: #000;
+    font-size: 28pt;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.card4 .text {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.card4 input[type='checkbox'] {
+    display: none;
+}
+
+.card4 .wrapper {
+    background: url('pic3.jpg') 30% 50%/cover no-repeat;
+}
+
+.card4 .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #caf7e3;
+    color: #fff;
+    padding: 0.8em;
+}
+
+.card4 .date span {
+    display: block;
+    text-align: center;
+}
+
+.card4 .date .year {
+    font-weight: 700;
+    font-size: 10pt;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.35);
+}
+
+.card4 .date .to {
+    font-size: 12px;
+}
+
+.card4 .content {
+    background-color: #fff;
+    height: 350px;
+    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+li {
+    list-style-type: square;
+    padding: 10px;
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 16pt;
+}
+
+
+/* ----------comments---------- */
+
+.input_btn {
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 14pt;
+    height: 30px;
+}
+
+.blogs {
+    width: auto;
+    padding: 10px;
+}
+
+.comments_input {
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 20pt;
+    margin: 20px 20px 30px 100px;
+    height: 50px;
+    width: 200px;
+}
+
+.line {
+    display: none;
+}
+
+.display {
+    height: 600px;
+    width: 800px;
+    margin-left: 20%;
+    overflow: auto;
+}
+
+p {
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 20pt;
+}
+
+.msgb {
+    width: 165px;
+    border: #000 solid 1px;
+}
+
+
+/* ----------cv---------- */
+
+.cv_body {
+    text-align: center;
+}
+
+.cv_body div {
+    display: inline-block;
+}
+
+.cvt_left {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.cvt_left p {
+    font-size: 16pt;
+    margin: 5px 0px 0px 100px;
+}
+
+.cvt_right {
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.cvt_right p {
+    font-size: 16pt;
+    margin: 5px 0px 0px 20px;
+}

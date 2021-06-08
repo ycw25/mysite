@@ -1,0 +1,74 @@
+    .dream_body {
+        width: 99%;
+        text-align: center;
+    }
+    
+    .dream_body::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url(img3.gif);
+        z-index: -1;
+        opacity: .45;
+    }
+    
+    .index_btn {
+        display: block;
+        font-family: '標楷體', serif;
+        font-size: 14pt;
+    }
+    
+    .display {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .dream_db {
+        height: 500px;
+        width: 500px;
+        padding: 10px 0px 0px 30px;
+        text-align: left;
+        font-size: 20pt;
+        font-family: '標楷體', serif;
+        overflow: auto;
+        background-color: rgba(255, 255, 255, 0.7);
+        ;
+    }
+    
+    .input {
+        margin: 30px;
+    }
+    
+    .comments_input {
+        height: 70px;
+        width: 300px;
+        font-size: 20pt;
+        font-family: '標楷體', serif;
+    }
+    
+    .input_btn {
+        height: 50px;
+        width: 100px;
+        font-size: 16pt;
+        font-family: '標楷體', serif;
+    }
+    
+    .btm {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        display: block;
+    }
+    
+    .img1 {
+        width: 40%;
+    }
+    
+    .line {
+        width: 90%;
+    }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♀〃漂丿a淳╭★の留言板板</title>
+    <link rel="stylesheet" href="dream.css">
+    <!-- <script>
+        function inputvalue() {
+            var input = document.getElementById("text").value;
+            alert('btn click');
+            window.open('/add-blog');
+        }
+    </script> -->
+    <form action="http://127.0.0.1:3000/dream" method="post">
+</head>
+
+
+<body class="dream_body">
+    <input type="button" value="回首頁" class="index_btn" onclick="javascript:location.href='/index'">
+    <img src="img2.gif">
+    <br>
+    <img src="img2.gif">
+    <br>
+    <img src="img2.gif">
+    <br>
+    <div class="display">
+        <div class="dream_db">
+            <%- include("./partials/displaynews.ejs") %>
+        </div>
+
+    </div>
+    <div class="input">
+        <form action="/new_comment" method="POST">
+            <input type="text" name="mytext" class="comments_input" required />
+            <input type="submit" value="留言" class="input_btn" />
+        </form>
+    </div>
+    <div class="btm">
+        <img src="img1.gif" class="img1">
+        <audio autoplay controls><source src="music.mp3" type="audio/mpeg"> </audio>
+    </div>
+</body>
+
+</html>
