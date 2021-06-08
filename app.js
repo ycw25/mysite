@@ -3,8 +3,8 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const Blog = require('./models/blog');
 const bodyParser = require('body-parser');
-var port = 3000;
-
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`listening on:`, port));
 // express app
 const app = express();
 // app.listen(port, () => {
