@@ -34,13 +34,16 @@
     </div>
     <div class="input">
         <form action="/new_comment" method="POST">
+            <p>Name</p>
+            <input type="text" name="myname" class="name_input" required />
+            <p>Comment</p>
             <input type="text" name="mytext" class="comments_input" required />
             <input type="submit" value="留言" class="input_btn" />
         </form>
     </div>
     <div class="btm">
         <img src="img1.gif" class="img1">
-        <audio id="music" autoplay><source src="music.mp3" type="audio/mpeg"> </audio>
+        <audio id="music" autoplay controls><source src="music.mp3" type="audio/mpeg"> </audio>
         <script>
             mp3 = document.getElementById("music");
             mp3.volume = 0.2;

@@ -49,10 +49,10 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.post('/dream', function(req, res) {
-    var myText = req.body.mytext; //mytext is the name of your input box
-
+    var myText = req.body.mytext;
+    var myName = req.body.myname;
     const blog = new Blog({
-
+        title: myName,
         content: myText
     });
 
