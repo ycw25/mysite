@@ -3,8 +3,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const Blog = require('./models/blog');
 const bodyParser = require('body-parser');
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`listening on:`, port));
+var port = process.env.PORT || 8080;
 // express app
 const app = express();
 // app.listen(port, () => {
@@ -13,7 +12,7 @@ const app = express();
 
 const dbURI = "mongodb+srv://ycw25:zx01819@cluster0.jgv9s.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true }).then(result => app.listen(port)).catch(err => console.log(err));
+process.env.MONGODB_URI || mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true }).then(result => app.listen(port)).catch(err => console.log(err));
 
 // register view engine
 app.set('view engine', 'ejs');
